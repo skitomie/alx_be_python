@@ -25,16 +25,16 @@ operation = input("Choose the operation (+, -, *, /):")
 
 match operation:
     case "+" :
-          print (int("The result is", num1 + num2))
+          print ("The result is", num1 + num2)
         
     case "-" :
-           print(int("The result is", num1 - num2))
+           print("The result is", num1 - num2)
 
     case "*" :
-            print(int("The result is", num1 * num2))
+            print("The result is", num1 * num2)
 
     case "/" :
            if num2 != 0:
-            print(int("The result is", num1 / num2 ))
+            print("The result is", num1 / num2 )
            else:
             print("Cannot divide by zero.")
