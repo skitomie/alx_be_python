@@ -17,7 +17,8 @@ Continue until the pattern forms a square of the inputted size.
 
 
 
-size = int(input("Enter the size of the pattern:."))
+size = int(input("Enter the size of the pattern:"))
+
 i = 0 
 while i < size:
     for _ in range (size):
@@ -25,16 +26,3 @@ while i < size:
 
     print()  
     i = i + 1
-
-
-"""
-size = int(input("Enter the size of the pattern:."))
-
-current_row = 0
-while current_row < size:
-        for _ in range(size):
-            print("*", end="")
-       
-        print()  # Move to the next line after completing a row
-        current_row += 1
-"""
