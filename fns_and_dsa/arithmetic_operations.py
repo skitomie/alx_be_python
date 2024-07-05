@@ -1,4 +1,4 @@
-def perform_operation(num1: float,num2: float,operation: str):
+def perform_operation(num1: float,num2: float,operation: str) -> float:
    """check for the arithmetic operation to execute"""
    match operation:
       case "add":
@@ -16,3 +16,4 @@ def perform_operation(num1: float,num2: float,operation: str):
         else:
            print("Enter a valid number")
    
+   result = perform_operation(num1, num2, operation)
