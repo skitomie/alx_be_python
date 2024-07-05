@@ -15,4 +15,5 @@ def perform_operation(num1: float,num2: float,operation: str) -> float:
             return num1/num2
         else:
            print("Enter a valid number")
-   result = perform_operation(num1, num2, operation)
+
+        result = perform_operation(num1, num2, operation)
