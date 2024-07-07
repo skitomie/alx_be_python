@@ -1,12 +1,12 @@
 
-shopping_list_manager = ["Shopping List Manager",
+def dispaly_menu():
+            
+    shopping_list_manager = ["Shopping List Manager",
                         "1. Add Item", 
                         "2. Remove Item",
                         "3. View List",
                         "4. Exit"]
-
-def dispaly_menu():
-            for option in shopping_list_manager:
+    for option in shopping_list_manager:
                 print(option) 
 
 
