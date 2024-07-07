@@ -15,10 +15,9 @@ def main():
     while True:
         display_menu()
         
-        choice = input("Enter your choice: ")
+        choice = prompt("Enter your choice: ")
 
-        if choice == '1':
-            
+        if choice == '1':            
             item = prompt("Enter the item to add:")
             shopping_list.append(item)
             print(f"{item} has been added to your Shopping List!!!")
