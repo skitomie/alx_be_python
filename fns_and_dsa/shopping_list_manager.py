@@ -1,4 +1,6 @@
 
+from prompt_toolkit import prompt
+
 def display_menu():
     print("Shopping List Manager")
     print("1. Add Item")
@@ -16,11 +18,12 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            item = input("Enter the item to add:")
+            
+            item = prompt("Enter the item to add:")
             shopping_list.append(item)
             print(f"{item} has been added to your Shopping List!!!")
         elif choice == '2':
-             item = input("Remove an item from your List:")
+             item = prompt("Remove an item from your List:")
              if item in shopping_list:
                 shopping_list.remove(item)
                 print(f"{item} has been removed from your Shopping List!!!")
