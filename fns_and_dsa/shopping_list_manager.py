@@ -1,12 +1,12 @@
 
 def display_menu():
             
-    shopping_list_manager = ["Shopping List Manager",
+    Shopping_List_Manager = ["Shopping List Manager",
                         "1. Add Item", 
                         "2. Remove Item",
                         "3. View List",
                         "4. Exit"]
-    for option in shopping_list_manager:
+    for option in Shopping_List_Manager:
                 print(option) 
 
 
