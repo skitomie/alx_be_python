@@ -11,9 +11,9 @@ def convert_to_fahrenheit(celsius):
     fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR)+32
     return  fahrenheit
 
-temp = float(input("Enter the temperature to convert:"))
+temp = input("Enter the temperature to convert:")
 
-if type(temp) != float:
+if not isinstance((temp), float):
             print("Enter a Valid Temperature!!!")
             print(format)
 else: 
