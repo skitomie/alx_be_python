@@ -1,16 +1,15 @@
 from datetime import datetime
 
 time = datetime.datetime.now().time()
-current_date = datetime.date.today()
 
-def display_current_datetime():
-    now = datetime.datetime.now()
-    current_datetime = now.strftime("%d-%m-%Y %H:%M:%S")
-    
-    print("Current date & time:", current_datetime)
+now = datetime.datetime.now()
 
-display_current_datetime()
+def display_current_datetime():   
+    current_date = datetime.date.today()
 
+
+current_datetime = now.strftime("%d-%m-%Y %H:%M:%S")    
+print("Current date & time:", current_datetime)
 
 
 def calculate_future_date(days):
