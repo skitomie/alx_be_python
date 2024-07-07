@@ -1,5 +1,5 @@
 
-def dispaly_menu():
+def display_menu():
             
     shopping_list_manager = ["Shopping List Manager",
                         "1. Add Item", 
@@ -15,6 +15,7 @@ def add_item(shopping_list):
     shopping_list.append(item)
     print(f"{item} has been added to your Shopping List!!!")
 
+
 def remove_item(shopping_list):
     item = input(f"Remove an item from your List:").strip()
     if item in shopping_list:
@@ -24,7 +25,7 @@ def remove_item(shopping_list):
          print("Item not found on your Shopping List")
     
 
-def dispaly_list(shopping_list):
+def display_list(shopping_list):
     if shopping_list:
          print("Your Shopping List:")
     for items  in shopping_list:
@@ -34,7 +35,7 @@ def main():
     shopping_list = []   
 
     while True:
-        dispaly_menu()
+        display_menu()
         
         choice = input("Enter your choice: ").strip()
 
@@ -52,3 +53,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    Ola@dapo1055
