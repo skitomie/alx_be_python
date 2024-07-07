@@ -20,7 +20,7 @@ def perform_operation(num1: float,num2: float,operation: str) -> float:
 
 """
 
-def perform_operation(num1: float, num2: float, operation: str) -> float:
+def perform_operation(num1,num2, operation):
    ##check for the arithmetic operation to execute
     if operation == "add":
         return num1 + num2
