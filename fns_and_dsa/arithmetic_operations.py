@@ -1,5 +1,7 @@
+
+"""
 def perform_operation(num1: float,num2: float,operation: str) -> float:
-   """check for the arithmetic operation to execute"""
+   #check for the arithmetic operation to execute
    match operation:
       case "add":
          if operation == "add":
@@ -16,4 +18,18 @@ def perform_operation(num1: float,num2: float,operation: str) -> float:
         else:
            print("Enter a valid number")
 
-        
+"""
+
+def perform_operation(num1: float, num2: float, operation: str) -> float:
+    if operation == "add":
+        return num1 + num2
+    elif operation == "subtract":
+        return num1 - num2
+    elif operation == "multiply":
+        return num1 * num2
+    elif operation == "divide":
+        if num2 == 0:
+            return float('inf')
+        return num1 / num2
+    else:
+        raise ValueError(f"Unsupported operation: {operation}")
